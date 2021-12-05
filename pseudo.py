@@ -68,6 +68,23 @@ def calc_curve(P, Q, R): # Q is our current point. P and R are the points Q is b
   return 1/r
 
 
+def target_velocity(current_velocity,k,curve):
+  # curvature metric: k (1-5) / curvature
+  # as curvative metric increases, we decrease target velocity
+  # this algorithm has to sort that out
+
+  # im not sure about max velocity. a defined max velocity would be used in cases of a low curvature or a straight line (curvature would == infinity)
+  # we might have to define/hardcode max velocity ourselves.
+
+  # a robot's target velocity is based on which point it is closest too. i am assuming we'd have to use odom/location tracking to compare the robot's location to the points
+  
+
+
+
+  pass
+
+
+
 
 
 
